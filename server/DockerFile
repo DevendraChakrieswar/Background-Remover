@@ -25,3 +25,5 @@
     
     # Start app binding to Render's PORT
     CMD ["sh", "-c", "java $JAVA_OPTS -Dserver.port=${PORT} -jar /app/app.jar"]
+
+    # 
