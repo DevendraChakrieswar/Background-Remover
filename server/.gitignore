@@ -49,10 +49,12 @@ Thumbs.db
 hs_err_pid*.log
 replay_pid*.log
 
-# Spring config
-application.properties
-application.yml
-application-local.properties
-application-*.local.properties
-application-local.yml
-application-*.local.yml
+# # Spring config
+# application.properties
+# application.yml
+# application-local.properties
+# application-*.local.properties
+# application-local.yml
+# application-*.local.yml
+
+application.example.properties
