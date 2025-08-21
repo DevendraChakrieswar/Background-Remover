@@ -9,7 +9,7 @@ const Result = () => {
     const navigate = useNavigate();
 
   return (
-    <div className="mx-4 my-3 lg:mx-44 mt-14 min-h-[75vh]"> 
+    <div className="mx-4 my-3 lg:mx-44 mt-36 min-h-[75vh]"> 
         
         <div className="bg-white rounded-lg px-8 py-6 shadow-md">
 
