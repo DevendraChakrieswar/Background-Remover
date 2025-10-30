@@ -1,9 +1,8 @@
 package com.devendra.removebg.service.impl;
 
-import com.devendra.removebg.client.ClipdropClient;
+import com.devendra.removebg.client.MlServiceClient;
 import com.devendra.removebg.service.RemoveBackgroundService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -11,13 +10,11 @@ import org.springframework.web.multipart.MultipartFile;
 @RequiredArgsConstructor
 public class RemoveBackgroundServiceImpl implements RemoveBackgroundService {
 
-    @Value("${clipdrop.apikey}")
-    private String apiKey;
-
-    private final ClipdropClient clipdropClient;
+    private final MlServiceClient mlServiceClient;
 
     @Override
     public byte[] removeBackground(MultipartFile file) {
-        return clipdropClient.removeBackground(file, apiKey);
+        System.out.println("Inside Ml service");
+        return mlServiceClient.removeBackground(file);
     }
 }
